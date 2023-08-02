@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class DisplayComponent {
 
-  productImages:any;
+  Cartoonimages:any;
 
   constructor(private http:HttpClient){}
 
@@ -19,9 +19,9 @@ export class DisplayComponent {
   public getAllImages(){
 
 
-    let res =this.http.get("http://localhost:1234/prd/all");
+    let res =this.http.get("http://localhost:6789/car/all");
     res.subscribe(
-      data=>this.productImages=data
+      data=>this.Cartoonimages=data
     );
 
   }

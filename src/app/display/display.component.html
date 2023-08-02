@@ -22,12 +22,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let eachImage of productImages">
-        <td>{{eachImage.name}}</td>
-        <td>{{eachImage.price}}</td>
+      <tr *ngFor="let eachimage of Cartoonimages">
+        <td>{{eachimage.name}}</td>
+        <td>{{eachimage.price}}</td>
         <td><img width=200px 
             height=200px 
-            src="data:image/jpeg;base64,{{eachImage.image}}">
+            src="data:image/jpeg;base64,{{eachimage.image}}">
         </td>
       </tr>
       
