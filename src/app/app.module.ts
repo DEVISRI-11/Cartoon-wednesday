@@ -3,22 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { HeaderComponent } from './header/header.component';
-import { DisplayComponent } from './display/display.component';
 import { UploadComponent } from './upload/upload.component';
+import { DisplayComponent } from './display/display.component';
+import { HeaderComponent } from './header/header.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     UploadComponent,
-    HeaderComponent,
-    
-    DisplayComponent
+    DisplayComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

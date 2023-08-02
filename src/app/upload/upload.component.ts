@@ -22,7 +22,7 @@ export class UploadComponent {
   }
 
 
-  prdSubmitt(){
+  carSubmitt(){
     
     const uploadImageData = new FormData();
 
@@ -31,7 +31,7 @@ export class UploadComponent {
     uploadImageData.append("price",this.price);
     
 
-    let res =this.http.post("http://localhost:1234/prd/add",uploadImageData,
+    let res =this.http.post("http://localhost:4567/car/add",uploadImageData,
     { observe: 'response' });
     res.subscribe(
       data=>{
